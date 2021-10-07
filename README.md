@@ -9,7 +9,7 @@ Hello, welcome to my portfolio!
 * 🌎 [Live Github Page] (https://gallolopez1.github.io/Portfolio/)
 * 💾 [Repo (here)] (https://github.com/gallolopez1/Portfolio)
 
-<u># Challenge instructions:</u>
+# <u> Challenge instructions:</u>
 
 # 02 Advanced CSS: Portfolio
 
