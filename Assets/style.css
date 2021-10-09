@@ -123,8 +123,8 @@ footer li {
     padding-right: .5vh;
 }
 
-.instagram-icon:hover {
-    background-image: url(Assets\Icons\instagram-coral.svg);
+svg:hover path {
+    fill: #e95262;
 }
 
 .cursor {
