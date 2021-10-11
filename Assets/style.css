@@ -16,6 +16,7 @@
 html {
     overflow: scroll;
     overflow-x: hidden;
+    height: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -33,10 +34,12 @@ html {
 }
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
     height: 100px;
     /* background: #fce138; */
 }
@@ -45,11 +48,17 @@ header h1 {
     margin: 3vh 3vh 3vh 6vh;
     font-weight: 300;
     font-size: 3vh;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 header div {
     margin: 3vh 6vh 3vh 3vh;
     font-size: 3vh;
+    width: 100%;
+    text-align: right;
 }
 
 header div:hover {
