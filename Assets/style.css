@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: #000000;
+    background-color: #2e2e2e;
     text-decoration: none;
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -30,11 +30,11 @@ html {
 /* Optional: show position indicator in red */
 
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+    background: #ffffff;
 }
 
 header {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,20 +45,23 @@ header {
 }
 
 header h1 {
-    margin: 3vh 3vh 3vh 6vh;
+    margin-left: 6vh;
     font-weight: 300;
     font-size: 3vh;
     width: 100%;
     height: auto;
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 
 header div {
-    margin: 3vh 6vh 3vh 3vh;
+    margin-right: 6vh;
     font-size: 3vh;
     width: 100%;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header div:hover {
@@ -129,7 +132,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 100px;
+    margin-bottom: 3vh;
     display: flex;
     align-items: center;
     /* Height of the footer */
@@ -197,5 +200,39 @@ svg:hover path {
     100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(5);
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header h1 {
+        margin: 0;
+        margin-left: 3vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    header a {
+        padding: 1vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-left: 3vh;
+        font-size: 2vh;
+    }
+    header div {
+        margin-right: 6vh;
+        margin-left: 0;
+        font-size: 3vh;
+        width: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 0;
     }
 }

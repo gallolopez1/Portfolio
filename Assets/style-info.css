@@ -3,36 +3,61 @@
     margin: 0;
     background-color: transparent;
     text-decoration: none;
-    color: black;
+    color: #2e2e2e;
     font-family: 'Montserrat', sans-serif;
     cursor: none;
     box-sizing: border-box;
 }
 
 header {
-    background-color: transparent;
+    background-color: #e95262;
 }
 
-section div {
-    position: absolute;
-    margin-top: 10vh;
-    padding: 36vh;
-    padding-top: 0;
-    padding-bottom: 0;
+header a {
+    color: aliceblue;
+}
+
+.who {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3vh;
+    background-color: #e95262;
+    padding-bottom: 40vh;
+    padding-top: 15vh;
+}
+
+p.moto {
     font-size: 4vh;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    padding: 3vh;
+    padding-bottom: 20vh;
+}
+
+header h2 {
+    font-size: 5vh;
+    font-weight: 300;
+    text-decoration: underline 3px;
+    text-decoration-color: #e95262;
+    color: #e95262;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: white; */
 }
 
 .rooster {
-    width: 60vh;
+    width: 50vh;
+    padding-bottom: 3vh;
 }
 
-.text {
-    position: fixed;
-    min-width: 100%;
-    max-width: 100%;
-    max-height: 80vh;
-    overflow: scroll;
-    text-align: -webkit-center;
+.bio {
+    text-align: center;
+    margin: 12vh;
+    padding-bottom: 12vh;
 }
 
 .justified {
@@ -48,12 +73,18 @@ section div {
     color: #e95262;
 }
 
+.summary {
+    font-size: 4vh;
+    margin: 12vh;
+}
+
 footer {
     /* background: #fce138; */
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+    position: static;
     /* Height of the footer */
 }
 
@@ -62,7 +93,7 @@ footer div {
 }
 
 footer ul {
-    margin: 0 6vh 0 auto;
+    margin: 0 6vh 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,6 +102,18 @@ footer ul {
 footer li {
     height: 30px;
     width: 30px;
+}
+
+footer p {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    flex-wrap: wrap;
+}
+
+footer a:hover {
+    opacity: 50%;
 }
 
 svg:hover path {
@@ -119,5 +162,60 @@ svg:hover path {
     100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(5);
+    }
+}
+
+@media only screen and (max-width: 1170px) {
+    header a {
+        color: aliceblue;
+        font-size: 2.5vh;
+        margin-left: 0;
+    }
+    header h2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .who {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vh;
+        padding: 0;
+        padding-bottom: 35vh;
+        padding-top: 25vh;
+    }
+    p.moto {
+        font-size: 5vh;
+        border: solid white 2px;
+        background-color: white;
+        padding: 20vh 0 20vh 0;
+    }
+    .rooster {
+        width: 25vh;
+        padding-bottom: 3vh;
+        margin-top: 1vh;
+    }
+    .justified {
+        text-align: left;
+        font-size: 2.5vh;
+    }
+    .bio {
+        margin: 0 3vh 0 3vh;
+        font-size: 2vh;
+        padding-bottom: 6vh;
+    }
+    .summary {
+        font-size: 3vh;
+        margin: 6vh;
+        margin-top: 0;
+        text-align: center;
+    }
+    footer p {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.25vh;
+        flex-wrap: wrap;
+        margin-left: 0;
     }
 }
