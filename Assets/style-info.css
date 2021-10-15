@@ -57,7 +57,7 @@ header h2 {
 .bio {
     text-align: center;
     margin: 12vh;
-    padding-bottom: 12vh;
+    padding-bottom: 0
 }
 
 .justified {
@@ -76,15 +76,38 @@ header h2 {
 .summary {
     font-size: 4vh;
     margin: 12vh;
+    padding: 12vh 0 12vh 0;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vh;
+    padding: 3vh;
+    background-color: #e95262;
+}
+
+aside p,
+a,
+b {
+    color: aliceblue;
+}
+
+aside a:hover {
+    opacity: 50%;
 }
 
 footer {
-    /* background: #fce138; */
+    background: #e95262;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
     position: static;
+    margin: 0;
+    padding: 6vh 0 3vh 0;
     /* Height of the footer */
 }
 
@@ -110,14 +133,12 @@ footer p {
     justify-content: space-around;
     font-size: 3vh;
     flex-wrap: wrap;
-}
-
-footer a:hover {
-    opacity: 50%;
+    color: aliceblue;
 }
 
 svg:hover path {
-    fill: #e95262;
+    opacity: 50%;
+    fill: white;
 }
 
 .cursor {
@@ -166,11 +187,6 @@ svg:hover path {
 }
 
 @media only screen and (max-width: 1170px) {
-    header a {
-        color: aliceblue;
-        font-size: 2.5vh;
-        margin-left: 0;
-    }
     header h2 {
         display: flex;
         justify-content: space-around;
@@ -196,26 +212,31 @@ svg:hover path {
         margin-top: 1vh;
     }
     .justified {
-        text-align: left;
         font-size: 2.5vh;
     }
     .bio {
-        margin: 0 3vh 0 3vh;
+        margin: 0 6vh 0 6vh;
         font-size: 2vh;
-        padding-bottom: 6vh;
+        letter-spacing: .5px;
     }
     .summary {
         font-size: 3vh;
-        margin: 6vh;
-        margin-top: 0;
+        margin: 12vh 6vh 12vh 6vh;
         text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
     }
     footer p {
         text-align: center;
         display: flex;
-        justify-content: space-around;
-        font-size: 1.25vh;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         margin-left: 0;
+        font-size: 2vh;
+    }
+    aside p {
+        font-size: 2vh;
     }
 }
