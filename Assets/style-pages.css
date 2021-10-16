@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-family: 'Montserrat', sans-serif;
+    cursor: scroll;
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    position: fixed;
+    z-index: 1;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1vh solid white;
+    border-top: 1vh solid white;
+    width: 100%;
+    position: fixed;
+    padding: 1vh 0 1vh 0;
+    top: 10vh;
+    background-color: black;
+    font-size: 3vh;
+    z-index: 1;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 6vh;
+    border-radius: 10px;
+    font-size: 3vh;
+    margin: 0 49vh 0 49vh;
+}
+
+#gallery {
+    padding-top: 25vh;
+}
+
+#gallery img {
+    width: 100vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+section div p {
+    text-align: center;
+    border-radius: 5px;
+    padding: 1vh;
+    position: absolute;
+    margin: 6vh;
+    color: white;
+    font-size: 3vh;
+}
+
+section {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 3vh;
+    background-color: black;
+}
+
+footer {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    position: static;
+    margin: 0;
+    padding: 6vh 0 3vh 0;
+    /* Height of the footer */
+}
+
+footer p {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    flex-wrap: wrap;
+    color: white;
+}
+
+svg:hover path {
+    fill: #e95262;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 15vh;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    margin-right: 3vh;
+    background-color: #2e2e2e;
+}
+
+#myBtn:hover {
+    opacity: 50%;
+    background-color: #2e2e2e;
+    /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 1170px) {
+    header {
+        background: black;
+        position: fixed;
+        z-index: 1;
+    }
+    h2 {
+        text-align: center;
+        border-bottom: 1vh solid white;
+        border-top: 1vh solid white;
+        width: 100%;
+        position: fixed;
+        padding: 1vh 0 1vh 0;
+        top: 12vh;
+        background-color: black;
+        font-size: 3vh;
+        z-index: 1;
+    }
+    header a {
+        color: white;
+    }
+    h3 {
+        text-align: center;
+        margin: 3vh 0 3vh 0;
+        background-color: black;
+        color: white;
+        padding: 3vh;
+        margin: 0 3vh 0 3vh;
+        border-radius: 5px;
+    }
+    #gallery {
+        padding-top: 25vh;
+    }
+    #gallery img {
+        width: 100%;
+        height: 40vh;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 3vh;
+    }
+    div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    section div p {
+        text-align: center;
+        border-radius: 5px;
+        padding: 1vh;
+        position: absolute;
+        margin: 6vh;
+        color: white;
+    }
+    section {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 3vh;
+    }
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    footer p {
+        text-align: center;
+        /* display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap; */
+        margin-left: 0;
+        font-size: 2vh;
+        flex: 1;
+        flex-basis: 10%;
+    }
+    aside p {
+        font-size: 2vh;
+    }
+    #myBtn {
+        bottom: 12vh;
+        /* Place the button at the bottom of the page */
+        right: 15px;
+        /* Place the button 30px from the right */
+        color: white;
+        /* Text color */
+        margin-right: 3vh;
+        background-color: #2e2e2e;
+    }
+}

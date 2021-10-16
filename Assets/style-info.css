@@ -5,16 +5,20 @@
     text-decoration: none;
     color: #2e2e2e;
     font-family: 'Montserrat', sans-serif;
-    cursor: none;
+    cursor: scroll;
     box-sizing: border-box;
 }
 
 header {
-    background-color: #e95262;
+    background-color: #1b5682;
 }
 
 header a {
     color: aliceblue;
+}
+
+header a:hover {
+    color: #e95262;
 }
 
 .who {
@@ -22,7 +26,7 @@ header a {
     flex-direction: column;
     align-items: center;
     font-size: 3vh;
-    background-color: #e95262;
+    background-color: #1b5682;
     padding-bottom: 40vh;
     padding-top: 15vh;
 }
@@ -56,7 +60,7 @@ header h2 {
 
 .bio {
     text-align: center;
-    margin: 12vh;
+    margin: 20vh;
     padding-bottom: 0
 }
 
@@ -73,9 +77,13 @@ header h2 {
     color: #e95262;
 }
 
+a.hyperlink:hover {
+    opacity: 50%;
+}
+
 .summary {
     font-size: 4vh;
-    margin: 12vh;
+    margin: 20vh;
     padding: 12vh 0 12vh 0;
 }
 
@@ -86,7 +94,7 @@ aside {
     flex-direction: column;
     font-size: 3vh;
     padding: 3vh;
-    background-color: #e95262;
+    background-color: #1b5682;
 }
 
 aside p,
@@ -100,9 +108,9 @@ aside a:hover {
 }
 
 footer {
-    background: #e95262;
+    background: #1b5682;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-evenly; */
     flex-wrap: wrap;
     width: 100%;
     position: static;
@@ -117,9 +125,8 @@ footer div {
 
 footer ul {
     margin: 0 6vh 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-basis: 10%;
+    flex: 1;
 }
 
 footer li {
@@ -127,18 +134,8 @@ footer li {
     width: 30px;
 }
 
-footer p {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    font-size: 3vh;
-    flex-wrap: wrap;
-    color: aliceblue;
-}
-
 svg:hover path {
-    opacity: 50%;
-    fill: white;
+    fill: #e95262;
 }
 
 .cursor {
@@ -173,6 +170,39 @@ svg:hover path {
 
 .cursor.click::before {
     animation: click .5s ease-in-out forwards;
+}
+
+#myBtn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 12vh;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+    margin-right: 3vh;
+}
+
+#myBtn:hover {
+    background-color: #e95262;
+    /* Add a dark-grey background on hover */
 }
 
 @keyframes click {
@@ -213,6 +243,7 @@ svg:hover path {
     }
     .justified {
         font-size: 2.5vh;
+        text-align: left;
     }
     .bio {
         margin: 0 6vh 0 6vh;
@@ -230,13 +261,25 @@ svg:hover path {
     }
     footer p {
         text-align: center;
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        flex-wrap: nowrap; */
         margin-left: 0;
         font-size: 2vh;
+        flex: 1;
+        flex-basis: 10%;
     }
     aside p {
         font-size: 2vh;
+    }
+    #myBtn {
+        bottom: 30vh;
+        /* Place the button at the bottom of the page */
+        right: 15px;
+        /* Place the button 30px from the right */
+        color: white;
+        /* Text color */
+        margin-right: 3vh;
+        background-color: #e95262;
     }
 }

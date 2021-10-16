@@ -147,12 +147,21 @@ footer ul {
     margin: 0 6vh 0 auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 footer li {
     height: 30px;
     width: 30px;
+}
+
+footer p {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2vh;
+    flex-wrap: wrap;
+    color: aliceblue;
 }
 
 svg:hover path {
@@ -169,6 +178,7 @@ svg:hover path {
     border-radius: 50px;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    z-index: 2;
 }
 
 .cursor::after,
