@@ -189,6 +189,8 @@ svg:hover path {
         position: absolute;
         margin: 6vh;
         color: white;
+        width: 50%;
+        font-size: 2vh;
     }
     section {
         flex-direction: column;
