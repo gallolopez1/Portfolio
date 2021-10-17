@@ -35,8 +35,9 @@ h3 {
     color: white;
     padding: 6vh;
     border-radius: 10px;
-    font-size: 3vh;
+    font-size: 6vh;
     margin: 0 49vh 0 49vh;
+    width: 100%;
 }
 
 #gallery {
@@ -51,7 +52,7 @@ h3 {
     margin-bottom: 3vh;
 }
 
-div {
+section {
     display: flex;
     flex-direction: column;
     margin-top: 1vh;
@@ -163,6 +164,7 @@ svg:hover path {
         padding: 3vh;
         margin: 0 3vh 0 3vh;
         border-radius: 5px;
+        font-size: 5vh;
     }
     #gallery {
         padding-top: 25vh;
@@ -175,7 +177,7 @@ svg:hover path {
         border-radius: 5px;
         margin-bottom: 3vh;
     }
-    div {
+    section {
         display: flex;
         justify-content: center;
         flex-wrap: nowrap;
