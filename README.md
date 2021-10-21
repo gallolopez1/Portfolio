@@ -9,6 +9,29 @@ Hello, welcome to my portfolio!
 * 🌎 [Live Github Page] (https://gallolopez1.github.io/Portfolio/)
 * 💾 [Repo (here)] (https://github.com/gallolopez1/Portfolio)
 
+# <u> Portfolio Preview</u>
+
+### Landing Page
+
+<img src="Assets\Images\1.PNG" alt="Landing Page" /> 
+
+### About Me
+
+<img src="Assets\Images\2.PNG" alt="About Me" /> 
+
+### Web Design Page
+
+<img src="Assets\Images\3.PNG" alt="Web Design" /> 
+
+### Architecture Page
+
+<img src="Assets\Images\4.PNG" alt="Architecture" /> 
+
+### Random Projects Page
+
+<img src="Assets\Images\5.PNG" alt="Random" /> 
+
+
 # <u> Challenge instructions:</u>
 
 # 02 Advanced CSS: Portfolio
