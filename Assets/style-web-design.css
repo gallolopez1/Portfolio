@@ -6,7 +6,35 @@ img:hover {
     opacity: 75%;
 }
 
+h3 {
+	text-align: center;
+	margin: 24vh auto 0 auto;
+}
+p {
+    color: white;
+    font-size: 2vh;
+    border-radius: 2vh;
+    width: 100%;
+    padding-top: 3vh;
+    padding: 0;
+    margin: 3vh auto 3vh auto;
+    text-align: center;
+    display: flex;
+}
+
 .container {
+	display: flex;	
+}
+
+.container p {
+	display: flex;
+}
+
+img {
+	margin: 1vh, 6vh, 1vh, 6vh;
+}
+
+/*.container {
     margin: auto;
     margin-top: 20vh;
     background-color: black;
@@ -85,13 +113,13 @@ p {
 footer {
     display: flex;
     flex-wrap: nowrap;
-}
+} */
 
-footer p {
+/*footer p {
     text-align: center;
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap; */
+    flex-wrap: nowrap;
     margin-left: 0;
     font-size: 2vh;
     flex: 1;
@@ -100,4 +128,4 @@ footer p {
 
 aside p {
     font-size: 2vh;
-}
+}*/
